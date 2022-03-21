@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #2c2c53;
+}
+
+main {
+  padding: 2%;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* div informativo ** */
+.principal {
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Glory', sans-serif;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #e9d7b7;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo {
+  margin: auto;
+}
+
+header .logo img {
+  width: 70px;
+}
+
+header .menu {
+  position: relative;
+  display: inline-block;
+  margin: 2px 2px;
+}
+
+header .menu .drop {
+  display: none;
+  position: absolute;
+  background-color: #e9d7b7;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 10;
+  top: 28px;
+  right: -18px;
+}
+
+header .menu:hover .drop {
+  display: block;
+}
+
+header ul li {
+  list-style: none;
+  font-size: 1em;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .nav {
+  display: none;
+}
+
+.primero {
+  padding: 2%;
+}
+
+.primero .pelicula {
+  margin-bottom: 4%;
+  /* sinopsis, figcaption y links */
+}
+
+.primero .pelicula figure img {
+  max-width: 300px;
+}
+
+.primero .pelicula figure figcaption {
+  color: white;
+  font-family: 'Hina Mincho', serif;
+  font-size: 1em;
+}
+
+.primero .pelicula figure a {
+  color: #95eaff;
+  text-decoration: none;
+}
+
+.primero .ads {
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.primero .ads img {
+  display: none;
+}
+
+.primero .ads p {
+  color: #fff;
+}
+
+.primero .ads a {
+  color: #95eaff;
+  text-decoration: none;
+}
+
+/* footer */
+.formulario {
+  border: black 3px solid;
+  padding: 3%;
+  background-color: #58586d;
+}
+
+.formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.formulario form input[type="submit"] {
+  width: 150px;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+  margin: auto;
+}
+
+.formulario form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/*creador */
+.yo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1% 5%;
+  background-color: #474747;
+}
+
+.yo p {
+  font-family: 'Noto Serif', serif;
+}
+
+.cuevana {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+/* media queries */
+@media (min-width: 760px) {
+  .primero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primero .ads img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 170px;
+    margin: 50px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 850px) {
+  .principal {
+    font-size: 1.3em;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .menu {
+    display: none;
+  }
+  header .nav {
+    display: block;
+  }
+  header .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(44, 44, 83);
+}
+
+/* div principal */
+.principal {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(233, 215, 183);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 1.3em;
+        font-family: 'Lobster', cursive;
+        margin-left: 15px;
+    }
+    .nav{
+        display: none;
+    }
+    //menu hamburguesa
+    .menu {
+        position: relative;
+        display: inline-block;
+        margin: 2px 2px;
+
+        .drop {
+            display: none;
+            position: absolute;
+            background-color: rgb(233, 215, 183);
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 10;
+            top: 24px;
+            right: -18px;
+        }
+    }
+
+    .menu:hover .drop {
+        display: block;
+    }
+
+    ul li {
+        list-style: none;
+        font-size: 1em;
+        font-family: 'Teko', sans-serif;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+main {
+    text-align: center;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .capitulo {
+        border: 2px solid black;
+        margin: 1px 3px 10px;
+        max-width: 320px;
+        h2{
+            color: rgb(255, 255, 255);
+            font-family: 'Bebas Neue', cursive;
+        }
+        figure {
+            img {
+                max-width: 300px;
+            }
+
+            figcaption {
+                color: white;
+                font-family: 'Hina Mincho', serif;
+                font-size: 1em;
+            }
+
+            a {
+                color: rgb(149, 234, 255);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* footer creador */
+.yo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: rgb(71, 71, 71);
+
+    p {
+        font-family: 'Noto Serif', serif;
+    }
+}
+
+.cuevana {
+    text-align: center;
+    color: rgb(158, 158, 158);
+}
+//!mediaQueries
+@media (min-width: 850px){
+    header{
+        display: flex;
+        flex-direction: column;
+        .menu{
+            display: none;
+        }
+        .nav{
+            display: block;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

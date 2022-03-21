@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(44, 44, 83);
+}
+
+main{
+    padding: 2%;
+}
+
+h1{
+    display: none;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* div informativo ** */
+.principal{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(233, 215, 183);
+    text-align: center;
+    display: flex;
+    .logo {
+        margin: auto;
+        img{
+            width: 70px;
+        }
+    }
+    .menu{
+        position: relative;
+        display: inline-block;
+        margin: 2px 2px;
+        .drop{
+            display: none;
+            position: absolute;
+            background-color: rgb(233, 215, 183);
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 10;
+            top: 28px;
+            right: -18px;
+        }
+    }
+    .menu:hover .drop{
+        display: block;
+    }
+    ul li {
+        list-style: none;
+        font-size: 1em;
+        font-family: 'Bebas Neue', cursive;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    }
+    .nav{
+        display: none;
+    }
+}
+//PELICULAS 
+.primero{
+    padding: 2%;
+    .pelicula{
+        margin-bottom: 4%;
+        /* sinopsis, figcaption y links */
+        figure{
+            img{
+                max-width: 300px;
+            }
+            figcaption{
+                color: white;
+                font-family: 'Hina Mincho', serif;
+                font-size: 1em;
+            }
+            a{
+                color: rgb(149, 234, 255);
+                text-decoration: none;
+            }
+        }
+    }
+    .ads{
+        text-align: center;
+        border: 1px solid grey;
+        img{
+            display: none;
+        }
+        p{
+            color: #fff
+        }
+        a{
+            color: rgb(149, 234, 255);
+            text-decoration: none;
+        }
+    }
+}
+
+/* footer */
+.formulario{
+    border: black 3px solid;
+    padding: 3%;
+    background-color: rgb(88, 88, 109);
+    form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        input[type="submit"]{
+            width: 150px;
+            padding:8px 16px;
+            border:1px solid #000;
+            border-radius:5px;
+            display:block;
+            color:#fff;
+            background-color:#000;
+            margin: auto;
+        } 
+        
+        input[type="submit"]:hover{
+            cursor:pointer;
+        }
+    }
+}
+/*creador */
+.yo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: rgb(71, 71, 71);
+    p{
+        font-family: 'Noto Serif', serif;
+    }
+}
+
+.cuevana{
+    text-align: center;
+    color: rgb(158, 158, 158);
+}
+
+/* media queries */
+@media (min-width: 760px){
+    .primero{
+        display: flex;
+        .ads{
+            img{
+                display: flex;
+                width: 170px;
+                margin: 50px 0px 0px 0px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 850px){
+    .principal{
+        font-size: 1.3em;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        .menu{
+            display: none;
+        }
+        .nav{
+            display: block;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                font-size: 1.5em;
+            }
+            
+        }
+    }
+}

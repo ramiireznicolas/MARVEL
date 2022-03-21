@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@200&family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Teko:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c2c53;
+}
+
+/* div principal */
+.principal {
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Glory', sans-serif;
+}
+
+/* header */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #e9d7b7;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.3em;
+  font-family: 'Lobster', cursive;
+  margin-left: 15px;
+}
+
+header .nav {
+  display: none;
+}
+
+header .menu {
+  position: relative;
+  display: inline-block;
+  margin: 2px 2px;
+}
+
+header .menu .drop {
+  display: none;
+  position: absolute;
+  background-color: #e9d7b7;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 10;
+  top: 24px;
+  right: -18px;
+}
+
+header .menu:hover .drop {
+  display: block;
+}
+
+header ul li {
+  list-style: none;
+  font-size: 1em;
+  font-family: 'Teko', sans-serif;
+  margin-bottom: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  text-align: center;
+  margin-top: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .capitulo {
+  border: 2px solid black;
+  margin: 1px 3px 10px;
+  max-width: 320px;
+}
+
+main .capitulo h2 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+main .capitulo figure img {
+  max-width: 300px;
+}
+
+main .capitulo figure figcaption {
+  color: white;
+  font-family: 'Hina Mincho', serif;
+  font-size: 1em;
+}
+
+main .capitulo figure a {
+  color: #95eaff;
+  text-decoration: none;
+}
+
+/* footer creador */
+.yo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1% 5%;
+  background-color: #474747;
+}
+
+.yo p {
+  font-family: 'Noto Serif', serif;
+}
+
+.cuevana {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+@media (min-width: 850px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .menu {
+    display: none;
+  }
+  header .nav {
+    display: block;
+  }
+  header .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
